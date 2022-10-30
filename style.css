@@ -12,6 +12,10 @@ body{
   margin: auto;
   margin-top: 100px;
 }
+.slick-list {
+  
+  padding-left: 65px;
+}
 .card-list{
   display: flex;
   padding: 3rem;
@@ -31,7 +35,7 @@ body{
 }
 .row {
   
-  margin-left: -75px !important;
+  margin-left: -125px !important;
  
 }
 .card {
@@ -39,12 +43,13 @@ body{
   display: flex;
   flex-direction: column;
   width: 441px !important;
-  height: 355px;
-  min-width: 320px;
-  padding: 4.5rem;
+  height: 305px;
+
+  padding: 3rem;
   box-shadow: -23px 4px 50px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
-  margin-left: 50px;
+ 
+  
  cursor: pointer;
   border-radius: 10px;
   padding-right: 0;
@@ -55,19 +60,21 @@ body{
   margin-top: 50px;
 }
 
+.slick-list {
+  padding-left: 65px;
+  margin-right: -72px;
+}
 .card:hover ~ .card,
 .card:focus-within ~ .card{
-  transform: translateX(50px);
+  transform: translateX(18px);
   background-color: #F9F9F9;
 }
-.card:not(:first-child){
-
-  margin-left: -50px;
+.card:not(:first-child) {
+  margin-left: -110px;
   background-color: #FDFDFD;
-
 }
 .card:nth-child(4){
-  width: 500px !important;
+  width: 600px !important;
 }
 
 .card h2{
@@ -75,6 +82,7 @@ body{
   font-weight: 500px;
   line-height: 40px;
   background: #0000;
+  color: #000;
 }
 
 
@@ -106,9 +114,6 @@ button {
   height: 15px;
   border-radius:50%;
 }
-.card:nth-child(4){
-  width: 450px !important;
-}
 
 .slick-track {
   display: flex !important;
@@ -118,8 +123,11 @@ button {
 }
 
 @media screen and (max-width: 1368px){
+  .row {
+    margin-left: -102px !important;
+}
   .card h2{
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 30px;
     margin-bottom: 20px;
   }
@@ -131,7 +139,7 @@ button {
 }
 .card:not(:first-child) {
 
-  margin-left: -85px;
+  margin-left: -108px;
  
 }
 .push {
@@ -139,20 +147,11 @@ button {
 }
  
   .card {
-    
-    width: 441px !important;
-    height: 300px;
+    height: 220px;
     min-width: 345px;
-cursor: pointer;
-}
-  .slick-track {
- 
-    left: -10px;
-    
+  cursor: pointer;
 }
 
-.card h2{
-  font-size: 25px;
-}
+
 }
 

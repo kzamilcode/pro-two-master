@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+html {
+ box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.containerr{
+  width: 80% !important;
+  margin: auto;
+  margin-top: 100px;
+}
+.card-list{
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  overflow-x: scroll;
+}
+.push{
+  padding-top: 55px !important;
+}
+.card p{
+  color:#0D44D1;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.row {
+  
+  margin-left: -75px !important;
+ 
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 441px !important;
+  height: 355px;
+  min-width: 320px;
+  padding: 4.5rem;
+  box-shadow: -23px 4px 50px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  margin-left: 50px;
+ cursor: pointer;
+  border-radius: 10px;
+  padding-right: 0;
+  padding-top: 50px;
+  background: #F9F9F9;
+}
+.slick-track{
+  margin-top: 50px;
+}
+
+.card:hover ~ .card,
+.card:focus-within ~ .card{
+  transform: translateX(50px);
+  background-color: #F9F9F9;
+}
+.card:not(:first-child){
+
+  margin-left: -50px;
+  background-color: #FDFDFD;
+
+}
+.card:nth-child(4){
+  width: 500px !important;
+}
+
+.card h2{
+  font-size: 29px;
+  font-weight: 500px;
+  line-height: 40px;
+  background: #0000;
+}
+
+
+/****/
+.slick-dots li{
+  display:inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.slick-dots li .slick-active button{
+  background-color:#959595;
+}
+.slick-dots {
+	text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  
+}
+button:hover{
+  background-color:#D7D7D7;
+}
+button {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color:#999;
+  border:none;
+  width: 15px;
+  height: 15px;
+  border-radius:50%;
+}
+.card:nth-child(4){
+  width: 450px !important;
+}
+
+.slick-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  height: 420px;
+  
+}
+
+@media screen and (max-width: 1368px){
+  .card h2{
+    font-size: 18px !important;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+ 
+  .card p {
+
+    padding-top: 0;
+    
+}
+.card:not(:first-child) {
+
+  margin-left: -85px;
+ 
+}
+.push {
+  padding-top: 35px !important;
+}
+ 
+  .card {
+    
+    width: 441px !important;
+    height: 300px;
+    min-width: 345px;
+cursor: pointer;
+}
+  .slick-track {
+ 
+    left: -10px;
+    
+}
+
+.card h2{
+  font-size: 25px;
+}
+}
+
